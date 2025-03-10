@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SESI - Chat</title>
+  <link rel="stylesheet" href="/static/styles/estilo.css">
+  <!-- Font Awesome para ícones | by Font Awesome: https://fontawesome.com/ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Formulário de Login  galerinha -->
+    <div id="login-form">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <div class="form-group">
+          <label for="username">Usuário</label>
+          <div class="input-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <div class="input-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+          </div>
+        </div>
+
+        <button type="submit" style="background-color: coral;">Entrar</button>
+      </form>
+
+      <p style="text-align: center; margin-top: 15px;">
+        Não tem conta? 
+        <a href="#" id="show-register">Cadastre-se</a>
+      </p>
+    </div>
+
+    <!-- Form de cadastro pessoal -->
+    <div id="register-form" style="display: none;">
+      <h2>Cadastro</h2>
+      <form action="/cadastro" method="POST">
+        <div class="form-group">
+          <label for="nome_login_reg">Usuário</label>
+          <div class="input-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="nome_login_reg" name="nome_login_reg" placeholder="Escolha um nome de usuário" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="senha_reg">Senha</label>
+          <div class="input-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="senha_reg" name="senha_reg" placeholder="Crie uma senha" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="nome_usuario">Nome Completo</label>
+          <div class="input-icon">
+            <i class="fas fa-id-badge"></i>
+            <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Seu nome completo" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email_reg">Email</label>
+          <div class="input-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email_reg" name="email_reg" placeholder="seuemail@exemplo.com" required>
+          </div>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <p style="text-align: center; margin-top: 15px;">
+        Já tem conta? 
+        <a href="#" id="show-login">Fazer Login</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="/static/scripts/script.js"></script>
+
+</body>
+</html>
