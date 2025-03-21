@@ -28,11 +28,11 @@ Este repositório contém um **sistema de chat em Flask**, desenvolvido utilizan
 │   │   chat.py
 │   │   sql.py
 │   │   usuarios.py
-│   └───__pycache__
+│   
 │
 ├───models
 │       banco.db
-│       banco.sqbpro
+│       
 │
 ├───static
 │   ├───scripts
